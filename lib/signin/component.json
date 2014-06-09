@@ -13,7 +13,7 @@
     "component/t": "1.0.0",
     "cristiandouce/query": "0.0.1"
   },
-  "local": [ "regexps", "request", "title" ],
+  "local": [ "regexps", "request", "title", "sidebar" ],
   "scripts": [ "signin.js", "view.js" ],
   "styles": [ "signin.css" ],
   "templates": [ "form.jade" ],
