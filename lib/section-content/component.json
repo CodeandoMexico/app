@@ -1,0 +1,17 @@
+{
+  "name": "section-content",
+  "description": "Component to render elements inside the `#content` element",
+  "dependencies": {
+    "component/bus": "0.0.2",
+    "component/classes": "1.2.0",
+    "cristiandouce/query": "0.0.1",
+    "yields/empty": "0.0.1"
+  },
+  "local": [
+    "title"
+  ],
+  "scripts": [
+    "section-content.js"
+  ],
+  "main": "section-content.js"
+}
