@@ -10,7 +10,8 @@
     "cristiandouce/query": "0.0.1"
   },
   "local": [
-    "render"
+    "render",
+    "section-content"
   ],
   "styles": [ "styles.styl" ],
   "scripts": [ "404.js" ],
