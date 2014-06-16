@@ -17,7 +17,8 @@
     "help-tos",
     "help-pp",
     "help-glossary",
-    "help-markdown"
+    "help-markdown",
+    "section-content"
   ],
   "scripts": [ "help.js" ],
   "styles": [ "help.styl", "help-responsive.styl" ],
