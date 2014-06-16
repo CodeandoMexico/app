@@ -12,7 +12,14 @@
     "cristiandouce/query": "0.0.1",
     "component/t": "1.0.0"
   },
-  "local": [ "regexps", "citizen", "request", "title", "render" ],
+  "local": [
+    "regexps",
+    "citizen",
+    "request",
+    "title",
+    "render",
+    "section-content"
+  ],
   "scripts": [ "forgot.js", "forgot-view.js", "reset-view.js" ],
   "styles": [ ],
   "templates": [ "forgot-form.jade" , "reset-form.jade" ],
