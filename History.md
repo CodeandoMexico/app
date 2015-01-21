@@ -1,4 +1,269 @@
 
+0.9.0a / 2015-01-16
+==================
+
+ * Fix side-comments. Fixes #572
+
+0.9.0 / 2015-01-06
+==================
+
+ * Fix faulty error handling in forgotpassword and signup with notifier. Closes #549
+ * Remove unneeded entries from component.json
+ * Fix autosubmit and FormView error handling
+ * Made usage of notifier mandatory for mailing users.
+ * Fix edit comment form buttons styles #529
+ * Reply submit button not properly aligned #495
+ * Remove mandrill and mailer dependencies
+ * Refactor homepage to use a middelware instead of an if-check clause. Update dependencies #282
+ * Switch local dep markdown to DemocracyOS/marked for #527
+ * Update dom dependecy to avoid error of chained messages with .html() #282
+ * Remove unused markdown local module. Closes #329
+ * change local markdown dependecy by remote dependency #329
+ * Bumped component-builder version to 1.2.0. Related to #475.
+ * Fixed array length check throwing error with new version of dom. Related to #475.
+ * Changed merge-util argument type on calling. Closes #475.
+ * Remove deprecated comments-view component #282
+ * Remove unused markdown local module. Closes #329
+ * Improve styles and content for update browser page. Add links for donwload browsers. #168
+ * Decreased separation between commenter's name and timestamp.
+ * Hide header on scroll if app is rendered in mobile device. Closes #452.
+ * Add middleware to handle unsupported browsers. Add module for unsupported browsers. #168
+ * Fix #516: Upvote comment button underlines on hover
+ * Fix #515: User name and timestamp overlap on replies
+ * Add comment to current user's comments after successful submit #282
+ * Improved pluralization. Related to #406.
+ * Update participants counter and balloons after voting. Closes #406.
+ * Update citizen model. Made reply notifications true by default
+ * Voting made async and UI blocks when user clicks on voting buttons. Closes #394.
+ * Add mail notifications when a law is published for users that are subscribed to it. Closes #473
+ * Add setting for new-topic notification
+ * Add delivering notifications to client
+ * Add notifications attribute to citizen model
+ * Add notifying when someone replies to an argument
+ * Add notifier integration for forgot-password
+ * Update sample config with notifier requirements
+ * Add missing translations for settings in every language
+ * Enable settings-notifications view #28
+ * Add UI toggle component styled for DemocracyOS
+ * Remove control logs. Actually closes #26
+ * Make notifier usage dependent on configuration settings
+ * Make signup email validations rely on notifier-client
+
+0.8.26 / 2014-12-11
+==================
+
+ * Fix label logic for admin list law. Completes #504 and closes #472
+ * User thumbnail is not aligned with user name. Closes #503
+ * Remove jQuery scrolling to top after successful submit #458
+ * On creating a law, routes to the page for the new law. Closes #421
+ * Removed unique constraint for lawId. Closes #472.
+ * Remove legacy unbinding code fixed updated by #501 for #497
+ * Add restrict middleware to vote endpoint. Closes #490.
+ * Update checking for switchOn and switchOff being typeof function #500
+ * Author name supports apostrophes ('), hyphens (-) and dots (.). Closes #493.
+ * Update view to support unbindAll when element is removed, detaching DOM events and Emitter event handlers. Closes #500
+ * Update proposal-options to inherit from View #282
+ * Update ProposalArticle to inherit from View #282
+ * Fix reply submit button not properly aligned. Closes #495.
+ * #484 Remove unnecesary colon and semicolon from .styl file
+ * fix reply rendering after submittin. Closes #491
+ * Separate participants-box into two separate components: one for holding the box and another one for each participant bubble #282
+ * Remove unnecesary 'render' dependency
+ * Merge pull request #488 from DemocracyOS/revert-487-394-votes-count
+ * Remove unnecesary 'assert' library. Rename onremove method to _onremove to not collision with the FormView onremove method.
+ * #484 Fix rule
+ * #484 Fix h-scrolls on mobile settings. - migrate settings from css to stylus (related to  #215) - Fix media queryes.
+ * #224 - Restrict first name length on user drop down text
+ * Fixed mongoose sessions error. Closes #439.
+ * Update CONTRIBUTING.md
+ * New API method for getting the version info. Closes #444
+ * Merge pull request #455 from bigokro/fix/proceed-in-english
+ * Minor spelling corrections in English (procced --> proceed)
+ * Fixed function declarations on Issue #430
+ * Fix tag duplication on law creation. Closes #430.
+ * Fixed weird behavior when deleting arguments as admin
+ * Fix regex for URL validation. Closes #451
+
+0.8.25 / 2014-11-07
+==================
+
+ * Add preventing disabled accounts to sign in
+
+0.8.24 / 2014-10-22
+==================
+
+ * Fix dep ref back to upstream
+ * Revert "Update ref to a breaking dep"
+ * Revert "Update all dep refs from 'visionmedia' to 'tj' #456"
+
+0.8.23 / 2014-10-21
+==================
+
+ * Update ref to a breaking dep
+
+0.8.22 / 2014-10-21
+==================
+ * Update all dep refs from 'visionmedia' to 'tj' #456
+ * Update dep for DemocracyOS/side-comments
+ * Update refs for component/t
+ * Pin deps for component/emitter
+
+0.8.21 / 2014-10-21
+==================
+
+ * Fix fixtures use and add acknowledgements to README.md
+
+0.8.20 / 2014-10-20
+==================
+
+ * Fix fetching own comments from mongodb
+
+0.8.19 / 2014-10-15
+==================
+
+ * Fix layout and style of reply buttons. Closes #407
+
+0.8.18 / 2014-10-09
+==================
+
+ * Fix comments not showing up on any law
+ * Fix 'No citizen has argumented on this law yet' message
+
+0.8.17 / 2014-10-08
+==================
+
+ * fix admin able to delete side-comments of all users. Closes #448
+ * Fix avatar usage in side-comments. Closes #447
+
+0.8.16 / 2014-10-08
+==================
+
+ * Fix summary html rendering
+ * Complete catalan translation
+ * Add side-comments for summary paragraphs. Closes #33
+ * Fix sorting by 'Closing soon'. Close #442
+ * removes spanish error message (changed to english) - PR #442
+ * Update DemocracyOS/side-comments dep version. Close #436
+
+0.8.15 / 2014-10-08
+==================
+
+ * Add deleting comments as a staff member
+
+0.8.14 / 2014-10-07
+==================
+
+ * Bump sidebar-comments dep version to 0.0.9 and stylize them
+
+0.8.13 / 2014-10-07
+==================
+
+ * Bump DemocracyOS/side-comments dep version
+
+0.8.12 / 2014-10-07
+==================
+
+ * Fix side-comments avatar usage. Closes #447
+
+0.8.11 / 2014-10-07
+==================
+
+ * Partially undo last fix
+
+0.8.10 / 2014-10-07
+==================
+
+ * Fix filter box styles
+
+0.8.9 / 2014-10-07
+==================
+
+ * [side-comments] - Fix side-comments dep
+
+0.8.8 / 2014-10-06
+==================
+
+ * Pin mongoose version to 3.8.16
+
+0.8.7 / 2014-10-06
+==================
+
+ * Bump component-resolver dep version
+
+0.8.6 / 2014-10-02
+==================
+
+ * Update timeago dep
+
+0.8.5 / 2014-09-30
+==================
+
+ * Fix rendering clauses when only 1 clause is present. Closes #440
+
+0.8.4 / 2014-09-29
+==================
+
+ * Fix null citizen on lookup
+
+0.8.3 / 2014-09-22
+==================
+
+ * Add author field to law #428
+ * Add ToS and PP accept on signup #405
+ * Remove 'Bill' prefix from title and remove required lawId #424
+ * Fix refresh signin when there are no laws #434
+ * Fix typo on 'Read more'
+
+0.8.2 / 2014-09-19
+==================
+
+ * Add portuguese locale
+ * Add missing key from `en.json`
+
+0.8.1 / 2014-09-18
+==================
+
+ * Fix Makefile building the app as well as post-install script
+ * Update dependencies for closest non-deprecated version. Closes #431
+ * Fix translations
+
+0.8.0 / 2014-09-16
+==================
+
+ * Add citizen profile picture as a URL
+ * Add external links to a law
+ * Add custom text to truncate law clauses
+ * Add unvotable laws
+ * Remove 'source' as a required law attribute
+
+0.7.6c / 2014-09-11
+==================
+
+ * Fix create law
+
+0.7.6b / 2014-09-05
+==================
+
+ * [sidebar] - Fix path to check.png image
+
+0.7.6 / 2014-09-05
+==================
+
+ * Add navigate back to /law/:id after succesful signin. Closes #369
+ * Update node version to 0.10.28
+ * Update npm version to 1.4.9
+ * Update to Component(1)
+ * Fix English translations
+ * Fix signin tabindex
+
+0.7.5 / 2014-08-26
+==================
+
+ * Fix spanish translations
+ * Add menu items for `faq`, `tos`, `pp` and `glossary`, conditional to settings. Closes #412
+ * Add denying user to up/downvote comments if they are not signed in. Closes #403
+ * Add translations for 'You must be signed in to up/downvote arguments' #403
+
 0.7.4 / 2014-08-14
 ==================
 

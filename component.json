@@ -1,15 +1,11 @@
 {
-  "name": "DemocracyOS",
-  "version": "0.7.4",
+  "name": "democracyos",
+  "version": "0.9.0a",
   "description": "An online space for deliberation and voting on political proposals. The software aims to stimulate better arguments and come to better rulings.",
   "paths": [
     "lib"
   ],
-  "local": [
+  "locals": [
     "boot"
-  ],
-  "dependencies": { },
-  "remotes": [
-    "https://raw.githubusercontent.com"
   ]
 }

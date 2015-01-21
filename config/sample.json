@@ -4,6 +4,11 @@
   "privatePort": 3000,
   "publicPort": 3000,
   "mongoUrl": "mongodb://localhost/DemocracyOS-dev",
+  "authPages": {
+    "useExternal": false,
+    "signinUrl": "http://platform.democracyos.org/signin",
+    "signupUrl": "http://platform.democracyos.org/signup"
+  },
   "client": [
     "protocol",
     "host",
@@ -19,26 +24,13 @@
     "faq",
     "tos",
     "pp",
-    "glossary"
+    "glossary",
+    "authPages"
   ],
   "auth": {
     "basic": {
       "username": "",
       "password": ""
-    }
-  },
-  "mailer": {
-    "service": "Gmail",
-    "auth": {
-      "user": "example@gmail.com",
-      "pass": "yourExamplePassword123"
-    }
-  },
-  "mandrillMailer": {
-    "key": "api-key-provided-by-mandrill-something-like-klomFRs7MWASlosCa2q6Y",
-    "from" : {
-      "name": "DemocracyOS",
-      "email": "info@democraciaenred.org"
     }
   },
   "socialshare" : {
@@ -51,7 +43,7 @@
     }
   },
   "locale" : "en",
-  "logo" : " http://democracyos-demo.s3.amazonaws.com/logo.png",
+  "logo": "/lib/boot/images/logo.png",
   "favicon" : " http://democracyos-demo.s3.amazonaws.com/logo.png",
   "organization name" : "DemocracyOS on GitHub",
   "organization url" : "https://github.com/DemocracyOS/app",
@@ -64,5 +56,10 @@
   "faq": false,
   "tos": false,
   "pp": false,
-  "glossary": false
+  "glossary": false,
+  "notifications": {
+    "url": "http://localhost:9001/api/events",
+    "token": 1234
+  },
+  "secret": "Just a sample secret string"
 }

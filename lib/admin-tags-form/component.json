@@ -3,9 +3,9 @@
   "description": "Admin tags form view",
   "dependencies": {
     "component/t": "1.0.0",
-    "visionmedia/jade": "1.1.5"
+    "jadejs/jade": "1.1.5"
   },
-  "local": [
+  "locals": [
     "form-view",
     "tags",
     "tag-images"
@@ -14,7 +14,7 @@
     "template.jade"
   ],
   "styles": [
-    "admin-tags-form.css"
+    "admin-tags-form.styl"
   ],
   "scripts": [
     "view.js"

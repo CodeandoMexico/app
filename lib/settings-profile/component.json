@@ -2,11 +2,11 @@
   "name": "settings-profile",
   "description": "Settings profile view",
   "dependencies": {
-    "visionmedia/debug": "0.7.4",
-    "visionmedia/jade": "1.1.5",
+    "visionmedia/debug": "2.1.0",
+    "jadejs/jade": "1.1.5",
     "component/t": "1.0.0"
   },
-  "local": [
+  "locals": [
     "citizen",
     "form-view"
   ],
@@ -14,7 +14,7 @@
     "template.jade"
   ],
   "styles": [
-    "profile.css"
+    "styles.styl"
   ],
   "scripts": [
     "view.js"
